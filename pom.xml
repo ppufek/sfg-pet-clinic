@@ -11,7 +11,7 @@
 
     <groupId>guru.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.6-SNAPSHOT</version>
+    <version>0.0.6</version>
 
     <name>SFG Pet Clinic Project</name>
     <description>Demo project for Spring Boot</description>
@@ -64,7 +64,7 @@
     <!--TODO: Add Maven Release Plugin #3-->
     <scm>
         <developerConnection>scm:git:https://github.com/ppufek/sfg-pet-clinic.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>sfg-pet-clinic-0.0.6</tag>
     </scm>
 
 </project>
