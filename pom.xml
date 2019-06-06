@@ -51,6 +51,12 @@
                     <executable>C:\Program Files\Java\jdk1.8.0_212\bin\javac</executable>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <javadocExecutable>C:\Program Files\Java\jdk1.8.0_212\bin\javadoc</javadocExecutable>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
