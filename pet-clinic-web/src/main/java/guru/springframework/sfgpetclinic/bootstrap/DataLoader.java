@@ -1,21 +1,11 @@
 package guru.springframework.sfgpetclinic.bootstrap;
 
-import java.time.LocalDate;
-
+import guru.springframework.sfgpetclinic.model.*;
+import guru.springframework.sfgpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import guru.springframework.sfgpetclinic.model.Owner;
-import guru.springframework.sfgpetclinic.model.Pet;
-import guru.springframework.sfgpetclinic.model.PetType;
-import guru.springframework.sfgpetclinic.model.Speciality;
-import guru.springframework.sfgpetclinic.model.Vet;
-import guru.springframework.sfgpetclinic.model.Visit;
-import guru.springframework.sfgpetclinic.services.OwnerService;
-import guru.springframework.sfgpetclinic.services.PetTypeService;
-import guru.springframework.sfgpetclinic.services.SpecialityService;
-import guru.springframework.sfgpetclinic.services.VetService;
-import guru.springframework.sfgpetclinic.services.VisitService;
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -75,6 +65,8 @@ public class DataLoader implements CommandLineRunner {
         owner1.setAddress("123 Brickerel");
         owner1.setCity("Miami");
         owner1.setTelephone("12345648");
+
+        //Owner.builder().address("ASDF").build(); - Lombok @Builder annotation
 
         Pet mikesPet  = new Pet();
         mikesPet.setPetType(savedDogPetType);
