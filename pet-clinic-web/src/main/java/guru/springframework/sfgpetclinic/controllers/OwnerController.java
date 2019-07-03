@@ -36,7 +36,7 @@ public class OwnerController {
         return "owners/findOwners";
     }
 
-    @GetMapping()
+    @GetMapping
     public String processFindForm(Owner owner, BindingResult result, Model model) {
         //allow parameterless GET request for /owners to return all records
         if(owner.getLastName() == null) {
@@ -44,7 +44,7 @@ public class OwnerController {
         }
 
         //find owners by last name
-        List<Owner> results = ownerService.findAllByLastNameLike(owner.getLastName());
+        List<Owner> results = ownerService.findAllByLastNameLike("%" + owner.getLastName() + "%");
 
         if(results.isEmpty()) {
             //no owners found
