@@ -1,5 +1,13 @@
 [![CircleCI](https://circleci.com/gh/ppufek/sfg-pet-clinic.svg?style=svg&circle-token=ccbf6bd53e8b4c6560cc58d285e6510465ecad18)](https://circleci.com/gh/ppufek/sfg-pet-clinic)
 
-# sfg-pet-clinic
 
-SFT Pet Clinic
+# Spring Framework Guru Pet Clinic
+
+This repo is a project from online course called [Spring Framework 5: Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/?couponCode=GITHUB_SFGPETCLINIC).
+
+Contained in this repo is an opinionated version of the classic reference application - [Spring Pet Clinic](https://github.com/spring-projects/spring-petclinic)
+
+
+# License
+
+The Spring PetClinic sample application is released under version 2.0 of the [Apache License](http://www.apache.org/licenses/LICENSE-2.0).
