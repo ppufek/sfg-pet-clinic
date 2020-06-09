@@ -53,21 +53,13 @@ public class OwnerSDJpaService implements OwnerService {
 
         Optional<Owner> optionalOwner =  ownerRepository.findById(aLong);
 
-        if(optionalOwner.isPresent()) {
-            return optionalOwner.get();
-        }else {
-            return null;
-        }
+        return optionalOwner.orElse(null);
 
         //OR SHORTER:         return ownerRepository.findById(aLong).orElse(null);
     }
 
     @Override
     public Owner save(Owner object) {
-        System.out.println("#########################################");
-        System.out.println("#########################################");
-        System.out.println("#########################################");
-        System.out.println("#########################################");
         return ownerRepository.save(object);
     }
 
